@@ -33,7 +33,6 @@ fn and_example(){
     io::stdin().read_line(&mut temp).expect("Failed to read line");
     let second_bool: bool = matches!(temp.trim(), "true");
 
-    //& is used to check if both variables are true
     if first_bool && second_bool{
         println!("The result of the AND is true");
     }
@@ -54,7 +53,6 @@ fn or_example(){
     io::stdin().read_line(&mut temp).expect("Failed to read line");
     let second_bool: bool = matches!(temp.trim(), "true");
 
-    //|| is used to check if at least one of the variables are true
     if first_bool || second_bool{
         println!("The result of the OR is true");
     }
